@@ -1,0 +1,6 @@
+This is the source for PDS Mobile v0.80 (20 mar 12) 
+
+- PdsWebService.java servlet
+- js based pds viewer ( /tomcat/webapps/pds/mobile/index.html)
+
+chip_goines@harvard.edu
