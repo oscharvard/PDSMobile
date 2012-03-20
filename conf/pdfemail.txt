@@ -1,0 +1,7 @@
+The link to the PDS Document {0}, is listed below and is now available for
+download. Please note that this link will be active for no more than 7 days.
+
+For any other questions, please contact pds-support@hulmail.harvard.edu.
+----
+
+{1}

@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /pds/printoptions
+Allow: /
+Disallow: /pds/search
+Disallow: /pds/html

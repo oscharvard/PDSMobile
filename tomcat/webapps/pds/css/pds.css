@@ -1,0 +1,174 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+form {
+  margin-bottom: 0px;
+}
+.citationDiv {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	font-style: italic;
+	font-weight: bold;
+	position:relative;
+	width:600px;
+	height:60px;
+	overflow:auto;
+	border-top: solid;
+	border-right: solid;
+	border-bottom: solid;
+	border-left: solid;
+	border-color: #666666;
+	padding-left: 5px;;
+	border-width: 0.3mm;
+}
+div.citationDiv>div {  padding-top:0; padding-bottom:0; padding-right:1em; }
+.searchDiv {
+	border-top: solid;
+	border-right: solid;
+	border-bottom: solid;
+	border-left: solid;
+	border-color: #666666;
+	background-color: #FFFFFF;
+	border-width: 0.3mm;
+}
+.buttonnormal {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	font-style: normal;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #990000;
+}
+a.buttonnormal:hover {
+	background-color: #FFFFFF;
+	color: #990000;
+	font-weight: bold;
+}
+.buttonnormalgrey {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	font-style: normal;
+	font-weight: bold;
+	color: #DDDDDD;
+	text-decoration: none;
+	background-color: #999999;
+}
+.buttonhighlight {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	font-weight: bold;
+	color: #990000;
+	text-decoration: none;
+	background-color: #FFFFFF;
+}
+.bannercolor {
+	background-color: #990000;
+}
+.bannercolorgrey {
+	background-color: #999999;
+}
+.citLinksLine {
+    font-size:85%;
+    font-weight: normal;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+.stdLinks {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	font-style: normal;
+	white-space:nowrap;
+	text-decoration: none;
+	color: #000000;
+}
+a.stdLinks:hover {
+	background-color: #FFFFFF;
+	color: #990000;
+}
+.stdLinksWrap {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	font-style: normal;
+	text-decoration: none;
+	color: #000000;
+}
+.textsmallred {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	color: #990000;
+	text-decoration: none;
+}
+
+.redtextlink {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #990000;
+	text-decoration: none;
+}
+
+.pdsbasic80 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 80%;
+}
+.buttonhighlight2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	background-color: #FFFFFF;
+    font-size:75%;
+}
+.buttonhighlightred {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #990000;
+	padding: 2px;
+	margin: 0px;
+}
+.buttonhighlightgrey {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #6E6E6D;
+	padding: 2px;
+	margin: 2px;
+}
+.noframediv {
+	display:none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	color: #000000;
+}
+.noframediv2 a:link {
+	color: #000000;
+	text-decoration: underline;
+}
+.noframediv2 a:visited { 
+	color: #000000;
+	text-decoration: underline;
+}
+.noframediv2 a:hover { 
+	color: #990000;
+}
+
+.thumbLinks a:link {
+    color: #ff0000;
+}
+
+.thumbLinks a:visited {
+    color: #ff0000;
+}
+
+.thumbLinks a:hover {
+    color: #ff0000;
+}
+
+.thumbLinks img {
+    border-color: #ff0000;
+}

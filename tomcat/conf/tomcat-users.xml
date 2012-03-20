@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tomcat-users>
+  <role rolename="manager"/>
+  <role rolename="standard"/>
+  <role rolename="tomcat"/>
+  <role rolename="admin"/>
+  <role rolename="role1"/>
+  <user username="both" password="94b84ea0f45e3ac33f0c549d35968f92" roles="tomcat,role1"/>
+  <user username="tomcat" password="94b84ea0f45e3ac33f0c549d35968f92" roles="tomcat"/>
+  <user username="oisapps" password="94b84ea0f45e3ac33f0c549d35968f92" roles="standard,admin,manager"/>
+</tomcat-users>

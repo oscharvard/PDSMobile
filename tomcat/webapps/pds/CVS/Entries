@@ -1,0 +1,28 @@
+/.cvsignore/1.1/Thu Jun 19 19:37:44 2008//
+D/WEB-INF////
+/api-content.jsp/1.12/Wed Jan 25 03:10:19 2012//
+/api-error.jsp/1.3/Sat Nov  5 03:00:52 2011//
+/api-fullcitation.jsp/1.4/Thu Nov  3 18:27:21 2011//
+/api-links.jsp/1.4/Wed Nov  2 21:27:16 2011//
+/api-navigation.jsp/1.5/Wed Jan 25 01:49:13 2012//
+/api-navsection.jsp/1.10/Thu Jan 26 00:16:42 2012//
+/api-search.jsp/1.1/Sat Nov  5 02:50:35 2011//
+/citation.jsp/1.56/Fri Dec 10 03:37:49 2010/-kb/
+/commonheader.jsp/1.6/Fri Apr 24 19:34:01 2009/-kb/
+/content.jsp/1.13/Fri Jun 12 20:05:09 2009/-kb/
+D/css////
+/error.jsp/1.4/Thu Aug 21 18:34:53 2008/-kb/
+/frameset.jsp/1.27/Thu Oct 27 03:31:10 2011/-kb/
+/fullcitation.jsp/1.13/Mon Oct 25 14:38:17 2010//
+D/html////
+D/images////
+/index.html/1.2/Tue Jun 24 18:23:15 2008//
+D/indices////
+D/js////
+/links.jsp/1.9/Thu Aug  6 17:32:56 2009/-kb/
+D/mobile////
+/navigation.jsp/1.70/Wed Dec  8 19:10:18 2010/-kb/
+/navsection.jsp/1.70/Mon Sep 20 21:48:41 2010/-kb/
+/printoptions.jsp/1.33/Thu Jan 27 21:56:09 2011/-kb/
+/search.jsp/1.8/Fri Apr 24 19:34:01 2009/-kb/
+D/temp////

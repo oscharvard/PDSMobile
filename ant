@@ -1,0 +1,2 @@
+JAVA_HOME=/usr/java6
+/usr/local/ant/bin/ant "$@"

@@ -1,0 +1,276 @@
+PDS Changelog
+===================
+
+Changes in version 1.3.3 (6/7/11) 
+----------------------------------
+* Bugzilla  3542: reduced size of SQL query against NRS
+
+Changes in version 1.3.2 (5/2/11) 
+----------------------------------
+* Updated pdx_util.jar to change default image ordering.
+  JP2 is now displayed instead of JPG when both exist
+
+Changes in version 1.3.1 (4/19/11)
+-----------------------------------
+* added activation.jar and mail.jar to webapps/pds/WEB-INF/lib dir
+
+Changes in version 1.3.0 (4/19/11)
+-----------------------------------
+* check for async symlink and create it if not instantiated
+* adjusted build number to 1.3
+
+Changes in version 1.2.25 (3/21/11)
+-----------------------------------
+* added 7d deletion line in cleanup.sh
+
+Changes in version 1.2.24 (12/15/10)
+-----------------------------------
+* fixed email to say that print links last 7d instead of 72h
+
+Changes in version 1.2.23 (12/09/10)
+-----------------------------------
+* thumbnails limited to docs under 1000pp
+
+Changes in version 1.2.22 (11/18/10)
+-----------------------------------
+* restricted resolution of jp2 based on billing code
+* nav thumbnails restored
+* asynchronous pdf printing for print jobs larger than 10pp
+
+Changes in version 1.2.21 (4/5/10)
+-----------------------------------
+* fixed expand-all bug in nav bar
+
+Changes in version 1.2.20 (3/29/10)
+-----------------------------------
+* rechecked in pds.jar to make sure prod was getting right version 
+
+Changes in version 1.2.19 (3/19/10)
+-----------------------------------
+* page level views in navigation window
+* added "cite this resource"  (Bugs #2915,2914 fixed)
+
+Changes in version 1.2.18 (1/15/10)
+-----------------------------------
+* Limited number of pages that can be printed; now request jp2's at 1200 x 1200
+
+Changes in version 1.2.17 (8/6/09)
+-----------------------------------
+* Changed URLs for HOLLIS related links to use hollisclassic.harvard.edu
+
+Changes in version 1.2.16 (7/28/09)
+-----------------------------------
+* Now using IDS captions
+
+Changes in version 1.2.15 (5/19/09)
+-----------------------------------
+*  Attempt to get a clean release
+
+
+Changes in version 1.2.14 (5/13/09)
+-----------------------------------
+*  micro change in css to display Arabic in the banner
+
+Changes in version 1.2.13 (4/24/09)
+-----------------------------------
+*  Added support for presentation of bidirectional strings
+
+Changes in version 1.2.12 (9/09/08)
+-----------------------------------
+* When a frame is viewed outside of the frameset, the "view framed version of this document" link now
+  always point to page image view.
+* Fixed potential "View Image" link bug (when frame is viewed outside of frameset) where TIFF images 
+  are not displayed correctly.
+* Released updated index pages for web crawling
+	-Enabled cron job to build index pages weekly.
+
+Changes in version 1.2.11 (8/21/08)
+-----------------------------------
+* Updated help links with URNs
+* Updated pdx_util.jar to fix parsing of Google brightened METS with fully qualified name spaces.
+* Disabled SC_NOT_MODIFIED 304 redirect so that web crawlers can see the updated version
+  of the site for objects they may have already crawled.
+* Added root link to "Page Delivery Service" text in header on all pages
+
+Changes in version 1.2.10 (8/4/08)
+-----------------------------------
+* Web crawler enhancements
+* All HTML validates as XHTML
+* Cleaned up and removed unneeded CSS rules
+* Added favicon.ico
+* Updated pdx_util.jar to latest version 
+	-Using new option to escape invalid HTML characters from
+	 all text that can be displayed in the PDS interface.
+* Fixed object caching bug where an object updated in PDSM 
+  is not properly updated in the object cache.
+* Added PDS Index pages and script to launch the generation process.
+* Updated to build.xml 1.0.5
+	- Added post-config.sh script create symlinks to index files on /drsmisc
+* Fixed bug 2179. Users can no longer submit multiple print requests for the same pds object. An
+  error will be displayed until previous requests finish processing.  A user can
+  submit print requests for different pds objects concurrently.
+* Cleaned up error.jsp
+* Navigation tree state is now stored in each user's local session.
+* Added support for Safari frame size store and recall
+* Disabled IE7 frame size store and recall
+
+Changes in version 1.2.9 (3/28/2008)
+-----------------------------------
+* Significant changes to METS XML object caching.
+  METS are now stored in a central cache rather than being
+  bound so the users session. 
+* Added PdsUserFilter and ObjectAuthorizationFilter
+* Using JNDI resources for JDBC, PDS Configuration and METS Cache
+* Updated build.xml to support context.xml.template
+* Restored 30 minute session timeout
+* Added default tomcat index.html pages
+
+Changes in version 1.2.8 (3/28/2008)
+-----------------------------------
+* Closing possible XSS in PdsServlet
+
+Changes in version 1.2.7 (3/4/2008)
+-------------------------------
+* Reduced session timeout to 5 minutes
+* Added jdbcMinIdle parameter to database pooling
+* Increased jdbcMaxActive to 50
+* Increased jdbcMinIdle to 30
+* Updated ojdbc14.jar to version for oracle 10g
+* Added better logging of db init
+* Synchronized db init if pool fails
+
+Changes in version 1.2.6 (10/25/2007)
+-------------------------------
+* Fixing search.jsp so that only the current document is
+  searched.
+
+Changes in version 1.2.5 (10/23/2007)
+-------------------------------
+* Fixing UTF-8 OCR view
+
+Changes in version 1.2.4 (8/27/2007)
+-------------------------------
+* Updated version number for IDS mv2prod
+
+Changes in version 1.2.3 (6/20/2007)
+-------------------------------
+* Converted to JSP pages
+* Changes related to new Luratech IDS
+* New cleanup.sh script
+
+Changes in version 1.2.2 (6/5/2007)
+-------------------------------
+* Increased xmx max head size in bounce script to be 2048
+
+Changes in version 1.2.1 (5/30/2007)
+--------------------------------
+* Updated tomcat localhost log name
+* Changed log4j rollover patter to be .yyyyMM
+	also made this a configuration paramter
+
+Changes in version 1.2.0 (5/15/2007)
+--------------------------------
+* Enabled the tomcat localhost access log
+* Fixed view ocr bug where duplicate pages were
+  not being displayed correct
+  
+Changes in version 1.1.9 (5/9/2007)
+---------------------------------
+* Increased max action database connections
+
+Changes in version 1.1.8 (5/9/2007)
+---------------------------------
+* Disabled directory listing for servlet
+
+Changes in version 1.1.7 (5/4/2007)
+----------------------------------
+* Added actionable links for old hollis identifiers
+* Update display on non actionable identifier links
+
+Changes in version 1.1.6 (5/3/2007)
+----------------------------------
+* Added go to page/sequence flyover help
+* Fixed "View Image"/"View Text" link when the
+  default page image is text.
+
+Changes in version 1.1.5 (4/24/2007)
+----------------------------------
+* Fixed page go to to be compatible with PDSM
+* Fixed PDF generation to prevent collisions 
+  when two processes try to create the same document.
+
+Changes in version 1.1.4 (4/24/2007)
+----------------------------------
+* Adding logging for printoptions and links actions
+* Fixed blank window appearing in IE when creating PDF
+
+Changes in version 1.1.3 (4/10/2007)
+----------------------------------
+* Updated build.xml and xml.jar
+* Updated cronned scripts
+* Updated PrintHtml to remove a hanging ' character
+* Changed how Runtime is used to call giffy
+
+Changes in version 1.1.2 (3/23/2007)
+-----------------------------------
+* Updates for compatibility with pdsm preview
+
+Changes in version 1.1.1 (3/23/2007)
+-----------------------------------
+* Updates for access redirect
+
+Changes in version 1.1.0 (3/20/2007)
+-----------------------------------
+* Updated for new Linux front end
+* New url formats
+* Now using iText for PDF creation
+
+Changes in version 1.0.8 (10/01/2006)
+------------------------------------
+* Updated URL format for IDS/LIDS for new Linux IDS
+
+Changes in version 1.0.7 (04-11-2006)
+------------------------------------
+* Added lids jp2 control integration
+* Added frame stickyness feature
+* Many small bug fixes, see PDS 2.1 Requirements
+  document.
+
+Changes in version 1.0.6(11-03-2005)
+-----------------------------------
+* Fixed bug where if the default page image
+  was OCR in a docWORKS mets file, an error
+  was thrown
+
+Changes in version 1.0.5 (11-02-2005)
+-----------------------------------
+* Added support for the PDSM preview feature
+* Added support for UTF-8 text input on the Search Page
+
+Changes in version 1.0.4 (5-12-2005)
+------------------------------------
+* Changed how the last page is calculated
+  to fix the 'greying out of the next page arrow' bug
+
+Changes in version 1.0.3 (5-4-2005)
+------------------------------------
+* Added fixes to try and fix the problems with greying
+  out of the 'next page' arrow.
+* Fixed duplicated OCR being printed twice.
+* Removed Static functions from the PrintHtml class.
+
+
+Changes in version 1.0.2 (04-21-2005)
+------------------------------------
+* fixed display of UTF-8 characters in view text mode and 
+  in labels.
+* fixed null in PDF footer.
+* fixed the METS label title display in the citation frame
+  and other windows.
+
+
+
+
+
+
+

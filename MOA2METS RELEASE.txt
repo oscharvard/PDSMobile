@@ -1,0 +1,23 @@
+Changes in version 1.0.3 (5/2/05)
+------------------------------------------
+* Bug fix: Fixed the sequencing of the ORDER attribute when a page image 
+	   and OCR for it are duplicated in a set of MOA2 files
+
+Changes in Version 1.0.2 (3/21/05)
+------------------------------------------
+* Bug fix: Added the '-j jp2' command line flag to enable jp2 mimetypes
+  Note: This assumes that there will not be a mix of Jpeg and JP2 files in the MOA2 file.
+* Bug fix: Changed moa2mets.bat to pass variables to java using %*.  This allows for greater than
+           10 parameters to be used.
+* Moved the endorsed jars to libs\endorsed
+
+
+Changes in Version 1.0.1 (3/11/05)
+------------------------------------------
+* Bug fix: Fixed the improper generation of <mods:identfier> tags
+
+
+Changes in Version 1.0.0 (3/2/05)
+------------------------------------------
+* Initial Release
+

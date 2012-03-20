@@ -1,0 +1,36 @@
+<!-- The contents of this file will be loaded for each web application -->
+<Context allowLinking="true">
+
+    <!-- Default set of monitored resources -->
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+	
+    <!-- Uncomment this to disable session persistence across Tomcat restarts -->
+    <!--
+    <Manager pathname="" />
+    -->
+    
+    <!-- PDS Configuration -->
+    <Resource name="bean/PdsConf" auth="Container"
+	          type="edu.harvard.hul.ois.pds.PdsConf"
+	          factory="org.apache.naming.factory.BeanFactory"
+	          confPath="@project.base@/conf/pds.conf"/> 
+
+	<!--  JDBC DRS pooling configuration -->
+	<Resource name="jdbc/DrsDB" auth="Container"
+              type="javax.sql.DataSource" driverClassName="@jdbcDriver@"
+              url="@jdbcConnectString@"
+              username="repository" password="@db.password@" maxActive="100" maxIdle="25"
+              maxWait="15" removeAbandoned="true" removeAbandonedTimeout="10" logAbandoned="true"/> 
+    <!--  JDBC NRS pooling configuration -->
+	<Resource name="jdbc/NrsDB" auth="Container"
+              type="javax.sql.DataSource" driverClassName="@jdbcDriver@"
+              url="@jdbcConnectString@"
+              username="naming" password="@naming.pass@" maxActive="100" maxIdle="25"
+              maxWait="15" removeAbandoned="true" removeAbandonedTimeout="10" logAbandoned="true"/> 
+    
+    <!-- PDS XML CACHE -->
+   	<Resource name="bean/CacheController" auth="Container"
+             type="edu.harvard.hul.ois.pds.cache.CacheController"
+             factory="org.apache.naming.factory.BeanFactory"/> 
+
+</Context>

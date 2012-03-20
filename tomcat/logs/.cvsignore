@@ -1,0 +1,4 @@
+catalina.out
+*.log
+*.txt
+pds_access_log.*

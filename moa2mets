@@ -1,0 +1,15 @@
+#!/usr/bin/csh
+set ARGS=""
+foreach arg ($*)
+    set ARGS="$ARGS $arg"
+end
+
+set VERSION="dev"
+set ROOT="/home/pdx/$VERSION"
+set BIN="$ROOT/lib"
+set CLASSES="$ROOT/classes"
+
+setenv JAVA_HOME /usr/java
+setenv CLASSPATH ${CLASSES}:$BIN/app.jar:$BIN/mets.jar:$BIN/ojdbc14.jar:$BIN/pdx.jar:$BIN/util.jar:$BIN/xercesImpl.jar:$BIN/xml.jar
+
+java -Xmx1000m edu.harvard.hul.ois.pdx.Moa2Mets $ARGS
